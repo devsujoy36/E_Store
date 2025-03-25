@@ -1,11 +1,10 @@
 
-
-const Hero = () => {
+const About = () => {
   return (
     <div className="min-h-[90vh] flex justify-center items-center border text-7xl">
-        <h1>Hero</h1>
+        <h1>About</h1>
     </div>
   )
 }
 
-export default Hero
+export default About

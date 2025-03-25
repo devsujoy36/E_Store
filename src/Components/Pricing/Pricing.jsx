@@ -1,11 +1,10 @@
 
-
-const Hero = () => {
+const Pricing = () => {
   return (
     <div className="min-h-[90vh] flex justify-center items-center border text-7xl">
-        <h1>Hero</h1>
+        <h1>Pricing</h1>
     </div>
   )
 }
 
-export default Hero
+export default Pricing

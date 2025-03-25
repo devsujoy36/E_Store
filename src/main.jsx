@@ -9,8 +9,10 @@ import About from './Pages/About/About.jsx';
 import LogIn from './Pages/Login/Login.jsx';
 import SignUp from './Pages/SignUp/SignUp.jsx';
 import ContactUs from './Pages/ContactUs/ContactUs.jsx';
-import Products from './Components/Products/Products.jsx';
 import ErrorPage from './Pages/ErrorPage/ErrorPage.jsx';
+import Projects from './Pages/Projects/Projects.jsx';
+import Courses from './Pages/Courses/Courses.jsx';
+import Products from './Pages/Products/Products.jsx';
 const router = createBrowserRouter([
     {
         path: "/",
@@ -30,16 +32,24 @@ const router = createBrowserRouter([
                 element:<ContactUs/>
             },
             {
+                path: "/products",
+                element:<Products/>
+            },
+            {
+                path: "/courses",
+                element:<Courses/>
+            },
+            {
+                path: "/projects",
+                element:<Projects/>
+            },
+            {
                 path: "/login",
                 element:<LogIn/>
             },
             {
                 path: "/signup",
                 element:<SignUp/>
-            },
-            {
-                path: "/products",
-                element:<Products   />
             },
         ]
     },

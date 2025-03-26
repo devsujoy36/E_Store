@@ -2,7 +2,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { createContext } from "react";
 import auth from "./firebase.config";
-import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const AuthContext = createContext()
@@ -39,6 +40,17 @@ const AuthProvider = ({ children }) => {
                 console.log(error.message);
             });
     }
+    const provider = new GoogleAuthProvider();
+    const signInWithGoogle = () => {
+        signInWithPopup(auth, provider)
+            .then((result) => {
+                setUser(result.user)
+                console.log(result.user);
+            })
+            .catch((error) => {
+                console.log(error.message);
+            });
+    }
 
     const signOutUser = () => {
         signOut(auth)
@@ -54,7 +66,7 @@ const AuthProvider = ({ children }) => {
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, currentUser => {
             setUser(currentUser)
-            console.log(currentUser);
+            // console.log(currentUser);
         })
         return () => {
             unSubscribe();
@@ -71,7 +83,8 @@ const AuthProvider = ({ children }) => {
         projectList,
         logInUser,
         SignUpUser,
-        signOutUser
+        signOutUser,
+        signInWithGoogle
     }
     return (
         <AuthContext.Provider value={data}>

@@ -17,7 +17,7 @@ const Blogs = () => {
                         <button
                             className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-zinc-600 underline-offset-4 hover:underline h-10 px-4 py-2 w-full sm:w-auto">
                             Explore all posts<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
                                 className="lucide lucide-arrow-right ml-2 size-4">
                                 <path d="M5 12h14"></path>
                                 <path d="m12 5 7 7-7 7"></path>
@@ -29,8 +29,8 @@ const Blogs = () => {
 
                         <a href="#" className="flex flex-col overflow-clip rounded-xl border ">
                             <div>
-                                <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" How alt="Wickedblocks " is exploring
-                                    UI Design className="aspect-[16/9] h-full w-full object-cover object-center" />
+                                <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Wickedblocks "
+                                    className="aspect-[16/9] h-full w-full object-cover object-center" />
                             </div>
                             <div className="px-6 py-8 md:px-8 md:py-10 lg:px-10 lg:py-12">
                                 <h3 className="mb-3 text-lg font-semibold md:mb-4 md:text-xl lg:mb-6">
@@ -42,7 +42,7 @@ const Blogs = () => {
                                 </p>
                                 <p className="flex items-center hover:underline">
                                     Read more<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
                                         className="lucide lucide-arrow-right ml-2 size-4">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
@@ -53,8 +53,8 @@ const Blogs = () => {
 
                         <a href="#" className="flex flex-col overflow-clip rounded-xl border ">
                             <div>
-                                <img src="https://images.pexels.com/photos/414523/pexels-photo-414523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" How alt="Wickedblocks " is exploring
-                                    UI Design className="aspect-[16/9] h-full w-full object-cover object-center" />
+                                <img src="https://images.pexels.com/photos/414523/pexels-photo-414523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Wickedblocks "
+                                    className="aspect-[16/9] h-full w-full object-cover object-center" />
                             </div>
                             <div className="px-6 py-8 md:px-8 md:py-10 lg:px-10 lg:py-12">
                                 <h3 className="mb-3 text-lg font-semibold md:mb-4 md:text-xl lg:mb-6">
@@ -66,7 +66,7 @@ const Blogs = () => {
                                 </p>
                                 <p className="flex items-center hover:underline">
                                     Read more<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
                                         className="lucide lucide-arrow-right ml-2 size-4">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
@@ -77,12 +77,12 @@ const Blogs = () => {
 
                         <a href="#" className="flex flex-col overflow-clip rounded-xl border ">
                             <div>
-                                <img src="https://images.pexels.com/photos/5895915/pexels-photo-5895915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" How alt="Wickedblocks " is exploring
-                                    UI Design className="aspect-[16/9] h-full w-full object-cover object-center" />
+                                <img src="https://images.pexels.com/photos/5895915/pexels-photo-5895915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Wickedblocks "
+                                    className="aspect-[16/9] h-full w-full object-cover object-center" />
                             </div>
                             <div className="px-6 py-8 md:px-8 md:py-10 lg:px-10 lg:py-12">
                                 <h3 className="mb-3 text-lg font-semibold md:mb-4 md:text-xl lg:mb-6">
-                                    How to Choose the Right Component Library for Your Project
+                                 to Choose the Right Component Library for Your Project
                                 </h3>
                                 <p className="mb-3 text-zinc-600 md:mb-4 lg:mb-6">
                                     Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis
@@ -90,7 +90,7 @@ const Blogs = () => {
                                 </p>
                                 <p className="flex items-center hover:underline">
                                     Read more<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
                                         className="lucide lucide-arrow-right ml-2 size-4">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
@@ -103,12 +103,12 @@ const Blogs = () => {
 
                         <a href="#" className="flex flex-col overflow-clip rounded-xl border ">
                             <div>
-                                <img src="https://images.pexels.com/photos/5895915/pexels-photo-5895915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" How alt="Wickedblocks " is exploring
-                                    UI Design className="aspect-[16/9] h-full w-full object-cover object-center" />
+                                <img src="https://images.pexels.com/photos/5895915/pexels-photo-5895915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Wickedblocks "
+                                    className="aspect-[16/9] h-full w-full object-cover object-center" />
                             </div>
                             <div className="px-6 py-8 md:px-8 md:py-10 lg:px-10 lg:py-12">
                                 <h3 className="mb-3 text-lg font-semibold md:mb-4 md:text-xl lg:mb-6">
-                                    How to Choose the Right Component Library for Your Project
+                                 to Choose the Right Component Library for Your Project
                                 </h3>
                                 <p className="mb-3 text-zinc-600 md:mb-4 lg:mb-6">
                                     Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis
@@ -116,7 +116,7 @@ const Blogs = () => {
                                 </p>
                                 <p className="flex items-center hover:underline">
                                     Read more<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
                                         className="lucide lucide-arrow-right ml-2 size-4">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
@@ -127,8 +127,8 @@ const Blogs = () => {
 
                         <a href="#" className="flex flex-col overflow-clip rounded-xl border ">
                             <div>
-                                <img src="https://images.pexels.com/photos/414523/pexels-photo-414523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" How alt="Wickedblocks " is exploring
-                                    UI Design className="aspect-[16/9] h-full w-full object-cover object-center" />
+                                <img src="https://images.pexels.com/photos/414523/pexels-photo-414523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Wickedblocks "
+                                    className="aspect-[16/9] h-full w-full object-cover object-center" />
                             </div>
                             <div className="px-6 py-8 md:px-8 md:py-10 lg:px-10 lg:py-12">
                                 <h3 className="mb-3 text-lg font-semibold md:mb-4 md:text-xl lg:mb-6">
@@ -140,7 +140,7 @@ const Blogs = () => {
                                 </p>
                                 <p className="flex items-center hover:underline">
                                     Read more<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
                                         className="lucide lucide-arrow-right ml-2 size-4">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
@@ -151,8 +151,8 @@ const Blogs = () => {
 
                         <a href="#" className="flex flex-col overflow-clip rounded-xl border ">
                             <div>
-                                <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" How alt="Wickedblocks " is exploring
-                                    UI Design className="aspect-[16/9] h-full w-full object-cover object-center" />
+                                <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Wickedblocks "
+                                    className="aspect-[16/9] h-full w-full object-cover object-center" />
                             </div>
                             <div className="px-6 py-8 md:px-8 md:py-10 lg:px-10 lg:py-12">
                                 <h3 className="mb-3 text-lg font-semibold md:mb-4 md:text-xl lg:mb-6">
@@ -164,7 +164,7 @@ const Blogs = () => {
                                 </p>
                                 <p className="flex items-center hover:underline">
                                     Read more<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
                                         className="lucide lucide-arrow-right ml-2 size-4">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>

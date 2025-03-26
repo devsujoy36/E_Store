@@ -1,12 +1,26 @@
 import { Link } from "react-router-dom"
 import { FaRegEye } from "react-icons/fa";
 import { FaRegEyeSlash } from "react-icons/fa";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AuthContext } from "../../Firebase/AuthProvider";
 const LogIn = () => {
+    const [showhide, setShowHide] = useState(true)
+    const { logInUser, user, signInWithGoogle } = useContext(AuthContext)
+
     const formHandler = (e) => {
         e.preventDefault()
+        const form = new FormData(e.currentTarget)
+        const email = form.get("email")
+        const password = form.get("password")
+        logInUser(email, password)
     }
-    const [showhide, setShowHide] = useState(true)
+
+
+
+
+
+
+
     return (
         <section className="w-full">
             <div className="mx-5 md:mx-auto md:py-14 py-10">
@@ -16,19 +30,19 @@ const LogIn = () => {
                         <h1 className="text-center text-3xl font-bold text-blue-600">Log In</h1>
                         <div className="mt-6">
 
-                            <form className="space-y-6" onClick={() => { formHandler }}>
+                            <form className="space-y-6" onSubmit={formHandler}>
                                 <div>
-                                    <label for="email" className="block text-sm font-medium text-gray-600"> Email address </label>
+                                    <label htmlFor="email" className="block text-sm font-medium text-gray-600"> Email address </label>
                                     <div className="mt-1">
-                                        <input id="email" name="email" type="email" autocomplete="email" required placeholder="Your Email"
+                                        <input id="email" name="email" type="email" required placeholder="Your Email"
                                             className="block w-full px-5 py-3 text-base text-gray-600 placeholder-gray-300 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50 focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-300" />
                                     </div>
                                 </div>
 
                                 <div className="space-y-1">
-                                    <label for="password" className="block text-sm font-medium text-gray-600"> Password </label>
+                                    <label htmlFor="password" className="block text-sm font-medium text-gray-600"> Password </label>
                                     <div className="mt-1 relative">
-                                        <input id="password" name="password" type={showhide ? "password" : "text"} autocomplete="current-password" required
+                                        <input id="password" name="password" type={showhide ? "password" : "text"} required
                                             placeholder="Your Password"
                                             className="block w-full px-5 py-3 text-base text-gray-600 placeholder-gray-300 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50 focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-300" />
                                         <div className="absolute text-xl text-gray-600 active:scale-95 transition-all cursor-pointer right-3 bottom-3.5" onClick={() => { setShowHide(!showhide) }}>
@@ -41,11 +55,11 @@ const LogIn = () => {
                                     <div className="flex items-center">
                                         <input id="remember-me" name="remember-me" type="checkbox" placeholder="Your password"
                                             className="w-4 h-4 text-blue-600 border-gray-200 rounded focus:ring-blue-500" />
-                                        <label for="remember-me" className="block ml-2 text-sm text-gray-600"> Remember me </label>
+                                        <label htmlFor="remember-me" className="block ml-2 text-sm text-gray-600"> Remember me </label>
                                     </div>
 
                                     <div className="text-sm">
-                                        <a href="#" className="font-medium text-blue-600 hover:text-blue-500"> Forgot your password? </a>
+                                        <Link to={"/"} className="font-medium text-blue-600 hover:text-blue-500"> Forgot your password? </Link>
                                     </div>
                                 </div>
 
@@ -64,8 +78,7 @@ const LogIn = () => {
                                 </div>
                             </div>
                             <div>
-                                <button
-                                    className="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-blue-600 transition  ease-in-out transform border-2 border-white shadow-md rounded-xl  active:scale-95 cursor-pointer">
+                                <button onClick={() => { signInWithGoogle() }} className="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-blue-600 transition  ease-in-out transform border-2 border-white shadow-md rounded-xl  active:scale-95 cursor-pointer">
                                     <div className="flex items-center justify-center">
                                         <img className="w-5 h-5 mr-2"
                                             src="https://lh3.googleusercontent.com/COxitqgJr1sJnIDe8-jiKhxDx1FrYbtRHKJ9z_hELisAlapwE9LUPh6fcXIfb5vwpbMl4xl9H9TRFPc5NOO8Sb3VSgIBrfRYvW6cUA"
@@ -75,7 +88,7 @@ const LogIn = () => {
                                 </button>
                             </div>
                         </div>
-                        <div class="mt-4 text-sm text-gray-600 text-center">
+                        <div className="mt-4 text-sm text-gray-600 text-center">
                             <p>Don't have an account? <Link to={"/signup"} className="font-semibold hover:underline transition-all hover:text-blue-600">Sign Up</Link>
                             </p>
                         </div>

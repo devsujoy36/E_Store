@@ -13,7 +13,6 @@ const Home = () => {
       <WhySay />
       <Blogs/>
       <WhyChoose/>
-      {/* <OurPlan/> */}
     </div>
   )
 }

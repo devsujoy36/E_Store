@@ -20,7 +20,7 @@ const CarSection = () => {
                                     <div className="flex items-center space-x-6 text-gray-800">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                             stroke="currentColor" className="w-5 h-5">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                                 d="M5 13l4 4L19 7"></path>
                                         </svg>
                                         <span>Premium selection</span>
@@ -28,7 +28,7 @@ const CarSection = () => {
                                     <div className="flex items-center space-x-6 text-gray-800">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                             stroke="currentColor" className="w-5 h-5">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                                 d="M5 13l4 4L19 7"></path>
                                         </svg>
                                         <span>Insurance</span>
@@ -36,7 +36,7 @@ const CarSection = () => {
                                     <div className="flex items-center space-x-6 text-gray-800">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                             stroke="currentColor" className="w-5 h-5">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                                 d="M5 13l4 4L19 7"></path>
                                         </svg>
                                         <span>All legal documents</span>
@@ -44,7 +44,7 @@ const CarSection = () => {
                                     <div className="flex items-center space-x-6 text-gray-800">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                             stroke="currentColor" className="w-5 h-5">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                                 d="M5 13l4 4L19 7"></path>
                                         </svg>
                                         <span>From German car dealers</span>
@@ -52,7 +52,7 @@ const CarSection = () => {
                                     <div className="flex items-center space-x-6 text-gray-800">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                             stroke="currentColor" className="w-5 h-5">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                                 d="M5 13l4 4L19 7"></path>
                                         </svg>
                                         <span>Payment Security</span>
@@ -60,7 +60,7 @@ const CarSection = () => {
                                     <div className="flex items-center space-x-6 text-gray-800">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                             stroke="currentColor" className="w-5 h-5">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                                 d="M5 13l4 4L19 7"></path>
                                         </svg>
                                         <span>Fast shipping (+ Express)</span>
@@ -99,7 +99,7 @@ const CarSection = () => {
                                     <div className="flex items-center space-x-6 text-gray-800">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                             stroke="currentColor" className="w-5 h-5">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                                 d="M5 13l4 4L19 7"></path>
                                         </svg>
                                         <span>Fast Shipping</span>
@@ -107,7 +107,7 @@ const CarSection = () => {
                                     <div className="flex items-center space-x-6 text-gray-800">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                             stroke="currentColor" className="w-5 h-5">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                                 d="M5 13l4 4L19 7"></path>
                                         </svg>
                                         <span>Secure process</span>
@@ -115,7 +115,7 @@ const CarSection = () => {
                                     <div className="flex items-center space-x-6 text-gray-800">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                             stroke="currentColor" className="w-5 h-5">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                                 d="M5 13l4 4L19 7"></path>
                                         </svg>
                                         <span>Exclusive selection</span>
@@ -123,7 +123,7 @@ const CarSection = () => {
                                     <div className="flex items-center space-x-6 text-gray-800">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                             stroke="currentColor" className="w-5 h-5">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                                 d="M5 13l4 4L19 7"></path>
                                         </svg>
                                         <span>Premium service</span>

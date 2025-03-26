@@ -1,9 +1,15 @@
 import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi";
+import { CgProfile } from "react-icons/cg";
 import { IoClose } from "react-icons/io5";
+import { FaSignOutAlt } from "react-icons/fa";
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const [showProfile, setShowProfile] = useState(false)
+
+  const navigate = useNavigate()
 
   return (
     <nav className='relative bg-white shadow dark:bg-gray-800'>
@@ -11,7 +17,7 @@ const Header = () => {
         <div className='lg:flex lg:items-center lg:justify-between'>
           <div className='flex items-center justify-between'>
             <a href='/'>
-              <h1 className=' text-2xl text-blue-600 italic font-bold font-carter-one'>ESTORE_HUB</h1>
+              <h1 className=' text-2xl text-blue-600 italic font-bold font-carter-one'>ESTORE_HUB </h1>
             </a>
 
             {/* Mobile menu button */}
@@ -32,7 +38,7 @@ const Header = () => {
           </div>
 
           {/* Mobile Menu */}
-          <div onClick={()=>setIsOpen(!isOpen)} className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center ${isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full' }`}
+          <div onClick={() => setIsOpen(!isOpen)} className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center ${isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'}`}
           >
             <div className='flex flex-col -mx-6 lg:flex-row lg:items-center lg:mx-8'>
               <NavLink to={'/'} className='px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700'> Home </NavLink>
@@ -48,8 +54,7 @@ const Header = () => {
               <NavLink to={'/login'} className='px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700'> Log In </NavLink>
 
               <NavLink to={'/signup'} className='px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700'> Sign Up </NavLink>
-              
-              <NavLink to={'/profile'} className='px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700'> Profile </NavLink>
+
             </div>
 
             <div className='flex items-center mt-4 lg:mt-0'>
@@ -73,22 +78,37 @@ const Header = () => {
                 </svg>
               </button>
 
-              <button
-                type='button'
-                className='flex items-center focus:outline-none'
-              >
-                <div className='w-8 h-8 overflow-hidden border-2 border-gray-400 rounded-full'>
-                  <img
-                    src='https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80'
-                    className='object-cover w-full h-full'
-                    alt='avatar'
-                  />
-                </div>
 
-                <h3 className='mx-2 text-gray-700 dark:text-gray-200 lg:hidden'>
-                  Khatab wedaa
-                </h3>
-              </button>
+
+              <div>
+
+                <button onClick={()=>{setShowProfile(!showProfile)}}>
+                  <img alt="Profile Img"
+                    src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg" class=" h-12 w-12 cursor-pointer rounded-full active:scale-95 transition-all scale-125" />
+                </button>
+                
+                {showProfile &&
+                  <ul class="absolute mt-2 z-10 flex min-w-[180px] flex-col gap-2 overflow-auto rounded-md border border-blue-gray-50 bg-white p-3 font-poppins shadow-lg " >
+
+                    <button onClick={() => { navigate("/profile") }} class="py-2 cursor-pointer active:scale-95 text-gray-700 rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 text-xl flex justify-center items-center gap-2 transition-all" >
+                      <CgProfile />
+                      <p class="block text-[15px]"> My Profile </p>
+                    </button>
+
+                    <hr class="my-2 border-blue-gray-50" tabindex="-1" role="menuitem" />
+
+                    <button class="py-2 cursor-pointer active:scale-95 text-gray-700 rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 text-xl flex justify-center items-center gap-2 transition-all" >
+                      <FaSignOutAlt />
+                      <p class="block text-[15px]"> Sign Out </p>
+                    </button>
+
+                  </ul>
+
+                }
+
+              </div>
+
+
             </div>
           </div>
         </div>
@@ -98,3 +118,11 @@ const Header = () => {
 }
 
 export default Header
+
+
+
+
+
+
+
+

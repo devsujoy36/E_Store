@@ -9,7 +9,7 @@ const LogIn = () => {
     const [showhide, setShowHide] = useState(true)
     return (
         <section className="w-full">
-            <div className="mx-5 md:mx-auto md:py-24 py-10">
+            <div className="mx-5 md:mx-auto md:py-14 py-10">
                 <div
                     className="flex shadow-2xl border-t border-gray-200 flex-col w-full max-w-md p-10 mx-auto my-6 transition duration-500 ease-in-out transform bg-white rounded-2xl md:mt-0">
                     <div className="mt-8">

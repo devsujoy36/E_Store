@@ -13,6 +13,7 @@
     "@tailwindcss/vite": "^4.0.16",
     "localforage": "^1.10.0",
     "match-sorter": "^8.0.0",
+    "moment": "^2.30.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",

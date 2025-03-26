@@ -1,103 +1,134 @@
+import { Link } from "react-router-dom"
+
 
 const Footer = () => {
-  return (
-    <div>
-      {/* <!-- component --> */}
-      <footer className="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100">
-        <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-            <div>
-              <h1 className="font-semibold text-2xl">eStore Hub</h1>
-              <p className="max-w-xs mt-4 text-sm text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, accusantium.
-              </p>
-              <div className="flex mt-8 space-x-6 text-gray-600">
-                <a href="#" className="hover:opacity-75" target="_blank" >
-                  <span className="sr-only"> Facebook </span>
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" />
-                  </svg>
-                </a>
-                <a href="#" className="hover:opacity-75" target="_blank" >
-                  <span className="sr-only"> Instagram </span>
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path fillRule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clipRule="evenodd" />
-                  </svg>
-                </a>
-                <a href="#" className="hover:opacity-75" target="_blank" >
-                  <span className="sr-only"> Twitter </span>
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                  </svg>
-                </a>
-                <a href="#" className="hover:opacity-75" target="_blank" >
-                  <span className="sr-only"> GitHub </span>
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
-                  </svg>
-                </a>
-                <a href="#" className="hover:opacity-75" target="_blank" >
-                  <span className="sr-only"> Dribbble </span>
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path fillRule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clipRule="evenodd" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
-              <div>
-                <p className="font-medium">
-                  Company
-                </p>
-                <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                  <a href="#" className="hover:opacity-75" > About </a>
-                  <a href="#" className="hover:opacity-75" > Meet the Team </a>
-                  <a href="#" className="hover:opacity-75" > History </a>
-                  <a href="#" className="hover:opacity-75" > Careers </a>
-                </nav>
-              </div>
-              <div>
-                <p className="font-medium">
-                  Services
-                </p>
-                <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                  <a href="#" className="hover:opacity-75" > 1on1 Coaching </a>
-                  <a href="#" className="hover:opacity-75" > Company Review </a>
-                  <a href="#" className="hover:opacity-75" > Accounts Review </a>
-                  <a href="#" className="hover:opacity-75" > HR Consulting </a>
-                  <a href="#" className="hover:opacity-75" > SEO Optimisation </a>
-                </nav>
-              </div>
-              <div>
-                <p className="font-medium">
-                  Helpful Links
-                </p>
-                <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                  <a href="#" className="hover:opacity-75" > Contact </a>
-                  <a href="#" className="hover:opacity-75" > FAQs </a>
-                  <a href="#" className="hover:opacity-75" > Live Chat </a>
-                </nav>
-              </div>
-              <div>
-                <p className="font-medium">
-                  Legal
-                </p>
-                <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                  <a href="#" className="hover:opacity-75" > Privacy Policy </a>
-                  <a href="#" className="hover:opacity-75" > Terms &amp; Conditions </a>
-                  <a href="#" className="hover:opacity-75" > Returns Policy </a>
-                  <a href="#" className="hover:opacity-75" > Accessibility </a>
-                </nav>
-              </div>
-            </div>
-          </div>
-          <p className="mt-8 text-xs text-gray-800">
-            © 2025 eStore Hub
-          </p>
+    return (
+        <div>
+            <section className="md:py-24 py-10">
+                <div className="container md:mx-auto mx-5">
+                    <footer>
+                        <a href='/'><h1 className=' text-2xl text-blue-600 italic font-bold font-carter-one'>ESTORE_HUB</h1></a>
+                        <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-4">
+                            <div>
+                                <h3 className="mb-4 font-bold">Company</h3>
+                                <ul className="space-y-4 text-zinc-600">
+                                    <li className="font-medium hover:text-gray-800"><a href="#"><Link to={"/"}>Home</Link></a></li>
+                                    <li className="font-medium hover:text-gray-800"><a href="#"><Link to={"/profile"}>Profile</Link></a></li>
+                                    <li className="font-medium hover:text-gray-800"><a href="#"><Link to={"/projects"}>Projects</Link></a></li>
+                                    <li className="font-medium hover:text-gray-800"><a href="#"><Link to={"/about"}>About</Link></a></li>
+                                    <li className="font-medium hover:text-gray-800"><a href="#"><Link to={"/courses"}>Courses</Link></a></li>
+                                    <li className="font-medium hover:text-gray-800"><a href="#"><Link to={"/products"}>Products</Link></a></li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h3 className="mb-4 font-bold">Product</h3>
+                                <ul className="space-y-4 text-zinc-600">
+                                    <li className="font-medium hover:text-gray-800"><a href="#"><Link to={"/"}>Overview</Link></a></li>
+                                    <li className="font-medium hover:text-gray-800"><a href="#"><Link to={"/"}>Pricing</Link></a></li>
+                                    <li className="font-medium hover:text-gray-800"><a href="#"><Link to={"/"}>Marketplace</Link></a></li>
+                                    <li className="font-medium hover:text-gray-800"><a href="#"><Link to={"/"}>Features</Link></a></li>
+                                    <li className="font-medium hover:text-gray-800"><a href="#"><Link to={"/"}>Integrations</Link></a></li>
+                                    <li className="font-medium hover:text-gray-800"><a href="#"><Link to={"/"}>Pricing</Link></a></li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h3 className="mb-4 font-bold">Resources</h3>
+                                <ul className="space-y-4 text-zinc-600">
+                                    <li className="font-medium hover:text-gray-800"><a href="#"><Link to={"/"}>Help</Link></a></li>
+                                    <li className="font-medium hover:text-gray-800"><a href="#"><Link to={"/"}>Sales</Link></a></li>
+                                    <li className="font-medium hover:text-gray-800"><a href="#"><Link to={"/"}>Advertise</Link></a></li>
+                                </ul>
+                            </div>
+                            <div className="lg:col-span-2 xl:col-span-1">
+                                <ul className="mb-10 flex items-center gap-2 text-zinc-600">
+                                    <li className="font-medium">
+                                        <a href="#"><span
+                                            className="flex size-12 items-center justify-center rounded-full bg-zinc-100 transition-colors hover:text-gray-800"><svg
+                                                stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" className="size-6"
+                                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z">
+                                                </path>
+                                            </svg></span></a>
+                                    </li>
+                                    <li className="font-medium">
+                                        <a href="#"><span
+                                            className="flex size-12 items-center justify-center rounded-full bg-zinc-100 transition-colors hover:text-gray-800"><svg
+                                                stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" className="size-6"
+                                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M440.3 203.5c-15 0-28.2 6.2-37.9 15.9-35.7-24.7-83.8-40.6-137.1-42.3L293 52.3l88.2 19.8c0 21.6 17.6 39.2 39.2 39.2 22 0 39.7-18.1 39.7-39.7s-17.6-39.7-39.7-39.7c-15.4 0-28.7 9.3-35.3 22l-97.4-21.6c-4.9-1.3-9.7 2.2-11 7.1L246.3 177c-52.9 2.2-100.5 18.1-136.3 42.8-9.7-10.1-23.4-16.3-38.4-16.3-55.6 0-73.8 74.6-22.9 100.1-1.8 7.9-2.6 16.3-2.6 24.7 0 83.8 94.4 151.7 210.3 151.7 116.4 0 210.8-67.9 210.8-151.7 0-8.4-.9-17.2-3.1-25.1 49.9-25.6 31.5-99.7-23.8-99.7zM129.4 308.9c0-22 17.6-39.7 39.7-39.7 21.6 0 39.2 17.6 39.2 39.7 0 21.6-17.6 39.2-39.2 39.2-22 .1-39.7-17.6-39.7-39.2zm214.3 93.5c-36.4 36.4-139.1 36.4-175.5 0-4-3.5-4-9.7 0-13.7 3.5-3.5 9.7-3.5 13.2 0 27.8 28.5 120 29 149 0 3.5-3.5 9.7-3.5 13.2 0 4.1 4 4.1 10.2.1 13.7zm-.8-54.2c-21.6 0-39.2-17.6-39.2-39.2 0-22 17.6-39.7 39.2-39.7 22 0 39.7 17.6 39.7 39.7-.1 21.5-17.7 39.2-39.7 39.2z">
+                                                </path>
+                                            </svg></span></a>
+                                    </li>
+                                    <li className="font-medium">
+                                        <a href="#"><span
+                                            className="flex size-12 items-center justify-center rounded-full bg-zinc-100 transition-colors hover:text-gray-800"><svg
+                                                stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" className="size-6"
+                                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                                </path>
+                                            </svg></span></a>
+                                    </li>
+                                    <li className="font-medium">
+                                        <a href="#"><span
+                                            className="flex size-12 items-center justify-center rounded-full bg-zinc-100 transition-colors hover:text-gray-800"><svg
+                                                stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" className="size-6"
+                                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z">
+                                                </path>
+                                            </svg></span></a>
+                                    </li>
+                                    <li className="font-medium">
+                                        <a href="#"><span
+                                            className="flex size-12 items-center justify-center rounded-full bg-zinc-100 transition-colors hover:text-gray-800"><svg
+                                                stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" className="size-6"
+                                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                                                </path>
+                                            </svg></span></a>
+                                    </li>
+                                </ul>
+                                <div className="grid w-full max-w-sm items-center gap-1.5">
+                                    <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                                        for="email">Subscribe to our newsletter</label>
+                                    <div className="flex w-full max-w-sm items-center space-x-2">
+                                        <input type="email"
+                                            className="flex h-10 w-full rounded-md border border-input bg-white px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-zinc-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                                            placeholder="Email" /><button
+                                                className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-zinc-900 text-white hover:bg-zinc-900/90 h-10 px-4 py-2"
+                                                type="submit">
+                                            Subscribe
+                                        </button>
+                                    </div>
+                                    <p className="mt-1 text-xs text-zinc-600">
+                                        By submitting, you agree to our<a href="#" className="ml-1 text-gray-800 hover:underline">Privacy Policy</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            className="md:mt-20 mt-10 flex flex-col flex-wrap justify-between gap-4 border-t pt-8 text-sm font-medium text-zinc-600 md:flex-row md:items-center">
+                            <p>© 2025 Sujoy Das. All rights reserved.</p>
+                            <ul className="flex gap-4">
+                                <li className="whitespace-nowrap underline hover:text-gray-800">
+                                    <a href="#">Terms and Conditions</a>
+                                </li>
+                                <li className="whitespace-nowrap underline hover:text-gray-800">
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </footer>
+                </div>
+            </section>
         </div>
-      </footer>
-    </div>
-  )
+    )
 }
 
 export default Footer

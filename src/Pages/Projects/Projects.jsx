@@ -1,22 +1,30 @@
+import { useContext } from "react"
 import Project from "./Project"
+import { AuthContext } from "../../Firebase/AuthProvider";
+
 
 
 const Projects = () => {
+    const { projectList } = useContext(AuthContext);
+
+    if (!projectList || projectList.length === 0) {
+        return (
+            <div className="min-h-[50vh] flex justify-center items-center">
+                <p className="text-center text-gray-500">Loading projects...</p>
+            </div>
+        );
+    }
+
     return (
         <div className="max-w-7xl md:my-20 my-10 md:mx-auto mx-5">
-            <div className=" grid md:grid-cols-3 grid-cols-1 gap-2">
-                
-                <Project />
-                <Project />
-                <Project />
-                <Project />
-                <Project />
-                <Project />
-
-
+            <div className="grid md:grid-cols-3 grid-cols-1 gap-2">
+                {projectList.map((project, index) => (
+                    <Project key={index} project={project} />
+                ))}
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Projects
+export default Projects;
+

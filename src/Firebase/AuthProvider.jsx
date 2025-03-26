@@ -2,22 +2,29 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { createContext } from "react";
 
-const AuthContext = createContext()
+// eslint-disable-next-line react-refresh/only-export-components
+export const AuthContext = createContext()
 
-const AuthProvider = () => {
-    const [projectList,setProjects] = useState() 
+const AuthProvider = ({ children }) => {
+    const [projectList, setProjects] = useState([])
+
+
     useEffect(() => {
-      fetch("Project.json")
-      .then(res=>res.json())
-      .then(data=>setProjects(data))
+        fetch("/Projects.json")
+            .then(res => res.json())
+            .then(data => setProjects(data))
     }, [])
+    const data = {
+        projectList,
+    }
 
-    console.log(projectList);
-    
 
-  return (
-    <div>AuthProvider</div>
-  )
+
+    return (
+        <AuthContext.Provider value={data}>
+            {children}
+        </AuthContext.Provider>
+    )
 }
 
 export default AuthProvider

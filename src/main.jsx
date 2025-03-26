@@ -1,5 +1,4 @@
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import React from 'react';
@@ -13,50 +12,31 @@ import ErrorPage from './Pages/ErrorPage/ErrorPage.jsx';
 import Projects from './Pages/Projects/Projects.jsx';
 import Courses from './Pages/Courses/Courses.jsx';
 import Products from './Pages/Products/Products.jsx';
+import AuthProvider from './Firebase/AuthProvider.jsx';
+import Profile from './Pages/Profile/Profile.jsx';
 const router = createBrowserRouter([
     {
         path: "/",
-        element:<Root_Page/>,
-        errorElement:<ErrorPage/>,
-        children:[
-            {
-                path: "/",
-                element:<Home/>
-            },
-            {
-                path: "/about",
-                element:<About/>
-            },
-            {
-                path: "/contactus",
-                element:<ContactUs/>
-            },
-            {
-                path: "/products",
-                element:<Products/>
-            },
-            {
-                path: "/courses",
-                element:<Courses/>
-            },
-            {
-                path: "/projects",
-                element:<Projects/>
-            },
-            {
-                path: "/login",
-                element:<LogIn/>
-            },
-            {
-                path: "/signup",
-                element:<SignUp/>
-            },
+        element: <Root_Page />,
+        errorElement: <ErrorPage />,
+        children: [
+            { path: "/", element: <Home /> },
+            { path: "/about", element: <About /> },
+            { path: "/contactus", element: <ContactUs /> },
+            { path: "/products", element: <Products /> },
+            { path: "/courses", element: <Courses /> },
+            { path: "/projects", element: <Projects /> }, 
+            { path: "/login", element: <LogIn /> },
+            { path: "/signup", element: <SignUp /> },
+            { path: "/profile", element: <Profile /> },
         ]
     },
 ]);
 createRoot(document.getElementById('root')).render(
 
     <React.StrictMode>
-        <RouterProvider router={router} />
+        <AuthProvider>
+            <RouterProvider router={router} />
+        </AuthProvider>
     </React.StrictMode>
 )

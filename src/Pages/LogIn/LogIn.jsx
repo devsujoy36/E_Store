@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom"
+
 const LogIn = () => {
 
     return (
-        <section class="bg-white dark:bg-gray-900">
+        <section class="bg-white dark:bg-gray-900 md:mx-0 mx-5" >
             <div class="container flex items-center justify-center min-h-[70vh] px-6 mx-auto">
                 <form class="w-full max-w-md">
 
@@ -46,9 +48,9 @@ const LogIn = () => {
                         </a>
 
                         <div class="mt-6 text-center ">
-                            <a href="#" class="text-sm text-blue-500 hover:underline dark:text-blue-400">
+                            <Link to={"/signup"} class="text-sm text-blue-500 hover:underline dark:text-blue-400">
                                 Don’t have an account yet? Sign up
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </form>

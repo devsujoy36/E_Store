@@ -1,8 +1,9 @@
 import { CgProfile } from "react-icons/cg";
+import { Link } from "react-router-dom";
 const SignUp = () => {
     return (
         <div>
-            <section class="bg-white dark:bg-gray-900">
+            <section class="bg-white dark:bg-gray-900 md:mx-0 my-10 mx-5">
                 <div class="container flex items-center justify-center min-h-[70vh] px-6 mx-auto">
                     <form class="w-full max-w-md">
 
@@ -54,9 +55,9 @@ const SignUp = () => {
                             </a>
 
                             <div class="mt-6 text-center ">
-                                <a href="#" class="text-sm text-blue-500 hover:underline dark:text-blue-400">
+                                <Link to={"/login"} class="text-sm text-blue-500 hover:underline dark:text-blue-400">
                                     Already have an account ? Log In
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </form>

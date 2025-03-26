@@ -1,16 +1,17 @@
-import Cards from "./Cards"
+import Project from "./Project"
+
 
 const Projects = () => {
     return (
-        <div className="max-w-7xl my-20 md:mx-auto mx-10">
-            <div className=" grid grid-cols-3 gap-2">
+        <div className="max-w-7xl md:my-20 my-10 md:mx-auto mx-5">
+            <div className=" grid md:grid-cols-3 grid-cols-1 gap-2">
                 
-                <Cards />
-                <Cards />
-                <Cards />
-                <Cards />
-                <Cards />
-                <Cards />
+                <Project />
+                <Project />
+                <Project />
+                <Project />
+                <Project />
+                <Project />
 
 
             </div>

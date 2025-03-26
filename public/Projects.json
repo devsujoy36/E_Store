@@ -1,27 +1,130 @@
 [
-    {
-      "img": "https://example.com/image1.jpg",
-      "title": "প্রথম প্রজেক্ট",
-      "description": "এটি একটি সুন্দর ও কার্যকরী ওয়েব অ্যাপ্লিকেশন।",
-      "rating": 4.8,
-      "sourceURL": "https://github.com/devsujoy36/project1",
-      "liveURL": "https://project1.netlify.app"
-    },
-    {
-      "img": "https://example.com/image2.jpg",
-      "title": "দ্বিতীয় প্রজেক্ট",
-      "description": "এই অ্যাপটি ব্যবহারকারীদের জন্য অনেক সুবিধা দেয়।",
-      "rating": 4.5,
-      "sourceURL": "https://github.com/devsujoy36/project2",
-      "liveURL": "https://project2.netlify.app"
-    },
-    {
-      "img": "https://example.com/image3.jpg",
-      "title": "তৃতীয় প্রজেক্ট",
-      "description": "এটি একটি রেসপনসিভ এবং ইন্টারেক্টিভ ওয়েবসাইট।",
-      "rating": 4.7,
-      "sourceURL": "https://github.com/devsujoy36/project3",
-      "liveURL": "https://project3.netlify.app"
-    }
-  ]
-  
+  {
+    "id": "tour-to-tuscany",
+    "img": "https://i.ibb.co.com/vry19PX/tourtotuscany36-netlify-app.png",
+    "title": "Tour-To-Tuscany",
+    "description": "A comprehensive travel guide and booking platform for exploring Tuscany, Italy.",
+    "rating": 4.8,
+    "sourceURL": "https://github.com/devsujoy36/Tour-To-Tuscany.git",
+    "liveURL": "https://tourtotuscany36.netlify.app",
+    "features": [
+      "Interactive travel guide for Tuscany",
+      "Secure online booking system",
+      "Detailed destination descriptions",
+      "User reviews and ratings",
+      "Responsive and mobile-friendly design"
+    ]
+  },
+  {
+    "id": "gadget-mart-bd",
+    "img": "https://i.ibb.co.com/1Gc5L56M/gadgetmartbd-netlify-app.png",
+    "title": "GADGET-MART-BD",
+    "description": "An advanced online marketplace for gadgets and electronics in Bangladesh.",
+    "rating": 4.7,
+    "sourceURL": "https://github.com/devsujoy36/GADGET-MART-BD.git",
+    "liveURL": "https://gadgetmartbd.netlify.app",
+    "features": [
+      "Wide range of gadgets and electronics",
+      "User-friendly shopping experience",
+      "Secure payment gateway",
+      "Product reviews and ratings",
+      "Fast delivery service"
+    ]
+  },
+  {
+    "id": "nest-mart-bd",
+    "img": "https://i.ibb.co.com/hJnLp4Q8/nestmartbd-netlify-app.png",
+    "title": "Nest-Mart-BD",
+    "description": "An e-commerce platform offering a wide range of essential products with easy accessibility.",
+    "rating": 4.6,
+    "sourceURL": "https://github.com/devsujoy36/Nest-Mart-BD.git",
+    "liveURL": "https://nestmartbd.netlify.app",
+    "features": [
+      "Diverse product categories",
+      "User-friendly navigation",
+      "Discount offers and deals",
+      "Secure payment integration",
+      "Fast and reliable delivery"
+    ]
+  },
+  {
+    "id": "furni",
+    "img": "https://i.ibb.co.com/60Psp4Xz/furniwordpress-netlify-app.png",
+    "title": "Furni",
+    "description": "An online store featuring stylish and modern furniture for home and office use.",
+    "rating": 4.7,
+    "sourceURL": "https://github.com/devsujoy36/Furni_Wordpress.git",
+    "liveURL": "https://furniwordpress.netlify.app",
+    "features": [
+      "Wide range of modern furniture",
+      "High-quality materials",
+      "Easy customization options",
+      "Home and office furniture",
+      "Fast shipping services"
+    ]
+  },
+  {
+    "id": "react-career-hub",
+    "img": "https://i.ibb.co.com/ZzGNY7vZ/careerhub36-netlify-app.png",
+    "title": "React-Career-Hub",
+    "description": "A career guidance and job recommendation platform providing insights into various job opportunities.",
+    "rating": 4.9,
+    "sourceURL": "https://github.com/devsujoy36/React-Career-Hub.git",
+    "liveURL": "https://careerhub36.netlify.app",
+    "features": [
+      "Job recommendations based on user skills",
+      "Career advice and tips",
+      "Company reviews and ratings",
+      "Resume-building guidance",
+      "Responsive and user-friendly interface"
+    ]
+  },
+  {
+    "id": "tic-tac-toe",
+    "img": "https://i.ibb.co.com/8g5v6Cnq/Tic-tac-toe-Old-Project-Apna-Collage.png",
+    "title": "Tic Tac Toe",
+    "description": "A classic and fun tic-tac-toe game playable directly in the browser.",
+    "rating": 4.5,
+    "sourceURL": "https://github.com/devsujoy36/Tic-tac-toe-Old-Project-Apna-Collage.git",
+    "liveURL": "https://devsujoy36.github.io/Tic-tac-toe-Old-Project-Apna-Collage/",
+    "features": [
+      "Classic Tic-Tac-Toe gameplay",
+      "Single and multiplayer modes",
+      "Smooth UI/UX experience",
+      "Score tracking system",
+      "Fully responsive design"
+    ]
+  },
+  {
+    "id": "recipes36",
+    "img": "https://i.ibb.co.com/PGz675mG/recipes36-netlify-app.png",
+    "title": "Recipes36",
+    "description": "A recipe-sharing platform for cooking enthusiasts with a variety of delicious recipes.",
+    "rating": 4.8,
+    "sourceURL": "https://github.com/devsujoy36/Assignment-7.git",
+    "liveURL": "https://recipes36.netlify.app",
+    "features": [
+      "Thousands of delicious recipes",
+      "Step-by-step cooking guides",
+      "User-contributed recipes",
+      "Ingredient-based search feature",
+      "Save favorite recipes option"
+    ]
+  },
+  {
+    "id": "crypto-world",
+    "img": "https://i.ibb.co.com/39xfH0Hq/sujoydas36-netlify-app.png",
+    "title": "Crypto World",
+    "description": "An informative website providing live updates and analysis on cryptocurrency markets.",
+    "rating": 4.7,
+    "sourceURL": "https://github.com/devsujoy36/crypto-world.git",
+    "liveURL": "https://sujoydas36.netlify.app",
+    "features": [
+      "Live cryptocurrency price updates",
+      "Market trends and analysis",
+      "Crypto news and updates",
+      "Portfolio tracking system",
+      "Secure and user-friendly interface"
+    ]
+  }
+]

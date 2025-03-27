@@ -36,7 +36,7 @@ const About = () => {
                             </div>
                         </div>
 
-                        <a href="../../assets/Sujoy Das Resume.pdf" className="">
+                        <a target="_blank" href="/public/Sujoy Das Resume.pdf" className="">
                             <div  className="w-fit bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-600 cursor-pointer active:scale-95 hover:-translate-y-1 transition-all">Download CV</div>
                         </a>
                     </div>

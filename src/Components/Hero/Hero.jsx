@@ -1,19 +1,26 @@
-import moment from 'moment';
+import React from 'react'
+
 const Hero = () => {
   return (
-    <div>
-      <div className="w-full hero-bg bg-center bg-cover h-[48rem]" >
-        <div className="flex items-center justify-center w-full h-full bg-gray-900/40">
-          <div className="text-center">
-            <h1 className='text-white text-2xl font-semibold font-poppine'>{moment().format('MMMM Do YYYY, h:mm:ss a')}</h1>
-            <h1 className="text-3xl flex flex-wrap justify-center items-center gap-2 font-semibold text-white lg:text-4xl">
-              Welcome To Our
-              <a href='/' className= "text-3xl text-blue-200 italic font-bold font-carter-one">ESTORE_HUB</a>
-            </h1>
-          </div>
-        </div>
-      </div>
+    <div className='portfolio-bg-hero '>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-2 container mx-auto md:min-h-[85vh] overflow-hidden'>
 
+        <div className=' z-10 flex justify-center items-center flex-col'>
+          <h1 className="text-4xl">Hello! I am <br />
+            <span className="font-semibold text-7xl text-blue-700"> Sujoy Das.</span></h1>
+        </div>
+
+
+        <div className='relative  flex items-end'>
+          <img src="https://pxdraft.com/react/kanye/img/user-image.png" alt="" className='relative z-10' />
+          <div className='md:block hidden bg-white h-[80vh] w-[80vh] rounded-full shadow-2xl absolute top-20 -left-26'></div>
+        </div>
+
+        <div className=' z-10 flex justify-center items-center flex-col'>
+          <h1 className="text-3xl  font-semibold">Welcome to <span className="   text-4xl "> eStore_Hub</span></h1>
+        </div>
+
+      </div>
     </div>
   )
 }

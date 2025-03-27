@@ -1,24 +1,42 @@
 import { useContext, useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { FaRegEye } from "react-icons/fa";
 import { FaRegEyeSlash } from "react-icons/fa";
 import { AuthContext } from "../../Firebase/AuthProvider";
+import { ToastContainer, toast } from 'react-toastify';
+
 
 const SignUp = () => {
+
     const [showhide, setShowHide] = useState(1)
-    const { SignUpUser, user } = useContext(AuthContext)
+    const { signUpUser, setUser, user , signInWithGoogle } = useContext(AuthContext)
+    const notify = (msg) => toast(msg);
+    const navigate = useNavigate()
 
     const formHandler = (e) => {
         e.preventDefault()
         const form = new FormData(e.currentTarget)
         const email = form.get("email")
         const password = form.get("password")
-        console.log(email, password);
-        SignUpUser(email,password)
-    }
-    
+        signUpUser(email, password)
+            .then((result) => {
+                setUser(result.user)
+                notify("Account Create Successfully")
+                console.log(result.user);
+
+            })
+            .catch((error) => {
+                console.log(error.message);
+                notify(error.message);
+            });
+        }
+        if (user) {
+            navigate("/profile")
+        }
+
     return (
         <section className="w-full">
+            <div><ToastContainer /></div>
             <div className="mx-5 md:mx-auto md:py-14 py-10">
                 <div
                     className="flex shadow-2xl border-t border-gray-200 flex-col w-full max-w-md p-10 mx-auto my-6 transition duration-500 ease-in-out transform bg-white rounded-2xl md:mt-0">
@@ -26,12 +44,12 @@ const SignUp = () => {
                         <h1 className="text-center text-3xl font-bold text-blue-600">Sign Up</h1>
                         <div className="mt-6">
 
-                            <form className="space-y-6" onSubmit={formHandler }>
+                            <form className="space-y-6" onSubmit={formHandler}>
 
                                 <div>
                                     <label htmlFor="name" className="block text-sm font-medium text-gray-600"> Full Name </label>
                                     <div className="mt-1">
-                                        <input id="name" name="name" type="text"  required placeholder="Your Full Name"
+                                        <input id="name" name="name" type="text" placeholder="Your Full Name"
                                             className="block w-full px-5 py-3 text-base text-gray-600 placeholder-gray-300 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50 focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-300" />
                                     </div>
                                 </div>
@@ -47,7 +65,7 @@ const SignUp = () => {
                                 <div className="space-y-1">
                                     <label htmlFor="password" className="block text-sm font-medium text-gray-600"> Password </label>
                                     <div className="mt-1 relative">
-                                        <input id="password" name="password" type={showhide ? "password" : "text"}  required
+                                        <input id="password" name="password" type={showhide ? "password" : "text"} required
                                             placeholder="Your Password"
                                             className="block w-full px-5 py-3 text-base text-gray-600 placeholder-gray-300 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50 focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-300" />
                                         <div className="absolute text-xl text-gray-600 active:scale-95 transition-all cursor-pointer right-3 bottom-3.5" onClick={() => { setShowHide(!showhide) }}>
@@ -79,7 +97,7 @@ const SignUp = () => {
                                 </div>
                             </div>
                             <div>
-                                <button
+                                <button onClick={() => { signInWithGoogle() }}
                                     className="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-blue-600 transition  ease-in-out transform border-2 border-white shadow-md rounded-xl  active:scale-95 cursor-pointer">
                                     <div className="flex items-center justify-center">
                                         <img className="w-5 h-5 mr-2"

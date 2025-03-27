@@ -19,7 +19,7 @@ const AuthProvider = ({ children }) => {
     }, [])
 
 
-    const SignUpUser = (email, password) => {
+    const signUpUser = (email, password) => {
         createUserWithEmailAndPassword(auth, email, password)
             .then((result) => {
                 setUser(result.user)
@@ -77,7 +77,7 @@ const AuthProvider = ({ children }) => {
         setUser,
         projectList,
         logInUser,
-        SignUpUser,
+        signUpUser,
         signOutUser,
         signInWithGoogle
     }

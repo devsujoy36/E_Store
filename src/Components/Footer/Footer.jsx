@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div>
             <section className="md:py-24 py-10">
-                <div className="container md:mx-auto mx-5">
+                <div className="container md:mx-auto px-5">
                     <footer>
                         <a href='/'><h1 className=' text-2xl text-blue-600 italic font-bold font-carter-one'>ESTORE_HUB</h1></a>
                         <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-4">
@@ -94,13 +94,14 @@ const Footer = () => {
                                             </svg></span></a>
                                     </li>
                                 </ul>
-                                <div className="grid w-full max-w-sm items-center gap-1.5">
+                                <div className="grid w-full  items-center gap-1.5">
                                     <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                                         htmlFor="email">Subscribe to our newsletter</label>
-                                    <div className="flex w-full max-w-sm items-center space-x-2">
+                                    <div className="flex w-full  items-center space-x-2">
                                         <input type="email"
                                             className="flex h-10 w-full rounded-md border border-input bg-white px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-zinc-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                                            placeholder="Email" /><button
+                                            placeholder="Email" />
+                                            <button
                                                 className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-zinc-900 text-white hover:bg-zinc-900/90 h-10 px-4 py-2"
                                                 type="submit">
                                             Subscribe

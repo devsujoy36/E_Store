@@ -32,13 +32,7 @@ const AuthProvider = ({ children }) => {
 
     const logInUser = (email, password) => {
         signInWithEmailAndPassword(auth, email, password)
-            .then((result) => {
-                setUser(result.user)
-                console.log(result.user);
-            })
-            .catch((error) => {
-                console.log(error.message);
-            });
+
     }
     const provider = new GoogleAuthProvider();
     const signInWithGoogle = () => {
@@ -80,6 +74,7 @@ const AuthProvider = ({ children }) => {
 
     const data = {
         user,
+        setUser,
         projectList,
         logInUser,
         SignUpUser,

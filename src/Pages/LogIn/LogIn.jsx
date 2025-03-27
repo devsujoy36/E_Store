@@ -3,9 +3,13 @@ import { FaRegEye } from "react-icons/fa";
 import { FaRegEyeSlash } from "react-icons/fa";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Firebase/AuthProvider";
+import { ToastContainer, toast } from 'react-toastify';
+
+
 const LogIn = () => {
+    const notify = (msg) => toast(msg);
     const [showhide, setShowHide] = useState(true)
-    const { logInUser, user, signInWithGoogle } = useContext(AuthContext)
+    const { logInUser, setUser, user, signInWithGoogle } = useContext(AuthContext)
 
     const formHandler = (e) => {
         e.preventDefault()
@@ -13,6 +17,15 @@ const LogIn = () => {
         const email = form.get("email")
         const password = form.get("password")
         logInUser(email, password)
+            .then((result) => {
+                setUser(result.user)
+                notify("Account Create Successfully")
+                console.log(result.user);
+            })
+            .catch((error) => {
+                console.log(error.message);
+                notify(error.message);
+            });
     }
 
 
@@ -24,6 +37,10 @@ const LogIn = () => {
     return (
         <section className="w-full">
             <div className="mx-5 md:mx-auto md:py-14 py-10">
+                <div>
+                    <ToastContainer />
+
+                </div>
                 <div
                     className="flex shadow-2xl border-t border-gray-200 flex-col w-full max-w-md p-10 mx-auto my-6 transition duration-500 ease-in-out transform bg-white rounded-2xl md:mt-0">
                     <div className="mt-8">

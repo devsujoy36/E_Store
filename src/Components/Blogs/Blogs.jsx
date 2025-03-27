@@ -3,7 +3,7 @@ const Blogs = () => {
     return (
         <div>
             <section className="md:py-5 py-5">
-                <div className="container mx-3 md:mx-auto flex flex-col items-center gap-16 lg:px-16">
+                <div className="container px-3 md:mx-auto flex flex-col items-center gap-16 lg:px-16">
 
                     <div className="text-center">
                         <p className="mb-6 text-xs font-medium uppercase ">Tag Line</p>
@@ -82,7 +82,7 @@ const Blogs = () => {
                             </div>
                             <div className="px-6 py-8 md:px-8 md:py-10 lg:px-10 lg:py-12">
                                 <h3 className="mb-3 text-lg font-semibold md:mb-4 md:text-xl lg:mb-6">
-                                 to Choose the Right Component Library for Your Project
+                                    to Choose the Right Component Library for Your Project
                                 </h3>
                                 <p className="mb-3 text-zinc-600 md:mb-4 lg:mb-6">
                                     Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis
@@ -108,7 +108,7 @@ const Blogs = () => {
                             </div>
                             <div className="px-6 py-8 md:px-8 md:py-10 lg:px-10 lg:py-12">
                                 <h3 className="mb-3 text-lg font-semibold md:mb-4 md:text-xl lg:mb-6">
-                                 to Choose the Right Component Library for Your Project
+                                    to Choose the Right Component Library for Your Project
                                 </h3>
                                 <p className="mb-3 text-zinc-600 md:mb-4 lg:mb-6">
                                     Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis

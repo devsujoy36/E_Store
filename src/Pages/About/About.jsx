@@ -2,10 +2,10 @@
 const About = () => {
     return (
         <div>
-            <div className="container mx-auto ">
+            <div className="container mx-auto md:px-0 px-5 ">
                 <h1 className="text-5xl font-semibold text-center my-10">About Me</h1>
 
-                <div className="flex justify-center items-center gap-14">
+                <div className="flex justify-center md:flex-row flex-col items-center gap-14">
                     <div>
                         <img src="https://pxdraft.com/react/kanye/img/about-me.png" alt="" />
                     </div>
@@ -25,7 +25,7 @@ const About = () => {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-2 ">
                             <div className="space-y-2">
-                                <h1>Birthday : <span>2th October 2005</span></h1>
+                                <h1>Birthday : <span>2th October 2003</span></h1>
                                 <h1>Age : <span>22 years</span></h1>
                                 <h1>Address : <span>Bangladesh</span></h1>
                             </div>
@@ -36,7 +36,7 @@ const About = () => {
                             </div>
                         </div>
 
-                        <a target="_blank" href="/public/Sujoy Das Resume.pdf" className="">
+                        <a target="bla" href="/public/Sujoy Das Resume.pdf" className="">
                             <div  className="w-fit bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-600 cursor-pointer active:scale-95 hover:-translate-y-1 transition-all">Download CV</div>
                         </a>
                     </div>

@@ -2,12 +2,12 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div className='portfolio-bg-hero md:py-0 py-20'>
+    <div className='portfolio-bg-hero md:py-0 pt-24'>
       <div className='grid  grid-cols-1 md:grid-cols-3 gap-2 container mx-auto md:min-h-[85vh] overflow-hidden'>
 
-        <div className=' z-10 col-span-1  flex justify-center items-center flex-col'>
-          <h1 className="text-4xl">Hello! I am <br />
-            <span className="font-semibold text-7xl text-blue-700"> Sujoy Das.</span></h1>
+        <div className=' z-10 col-span-1 text-4xl  flex justify-center items-center md:text-left text-center flex-col'>
+          <h1 className="md:text-4xl ">Hello! I am <br />
+            <span className="font-semibold md:text-7xl text-5xl text-blue-700"> Sujoy Das.</span></h1>
         </div>
 
 
@@ -18,8 +18,8 @@ const Hero = () => {
             <div className='md:block hidden bg-white h-[80vh] w-[80vh] rounded-full shadow-2xl absolute top-20 -left-26'></div>
           </div>
 
-          <div className=' w-full z-10 flex justify-center items-center flex-col'>
-            <h1 className="text-3xl  font-semibold">Welcome to <span className="text-4xl "> eStore_Hub</span></h1>
+          <div className=' w-full z-10 md:mt-0 mt-5  flex  md:justify-center items-center flex-col'>
+            <h1 className="md:text-3xl font-semibold">Welcome to <span className="md:text-4xl "> eStore_Hub</span></h1>
           </div>
 
         </div>

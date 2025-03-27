@@ -4,7 +4,7 @@ const WhyChoose = () => {
     return (
         <div>
             <section className="md:py-10 py-5 ">
-                <div className="container md:mx-auto lg:px-16 mx-5">
+                <div className="container md:mx-auto lg:px-16 px-5">
                     <p className="mb-4 text-sm text-zinc-600 lg:text-base">OUR VALUES</p>
                     <h2 className="text-3xl font-medium lg:text-4xl">Why Choose Us?</h2>
                     <div className="mt-14 grid gap-6 lg:mt-20 lg:grid-cols-3">

@@ -1,8 +1,3 @@
-
-
-/* Please ❤ this if you like it! */
-
-
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
 *,
 *::before,
@@ -10,15 +5,14 @@
   box-sizing: border-box;
 }
 
-p{
-	font-family: 'Poppins', sans-serif;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.7;
-	color: #fff;
+p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
   margin: 0;
 }
-.section-fluid-main{
+.section-fluid-main {
   position: relative;
   display: block;
   overflow: hidden;
@@ -30,7 +24,7 @@ p{
   max-width: 1140px;
   padding: 100px 0;
 }
-.section-row{
+.section-row {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -38,10 +32,10 @@ p{
   margin-right: -15px;
   margin-left: -15px;
 }
-.section-row:hover .section-col{
+.section-row:hover .section-col {
   opacity: 0.1;
 }
-.section-col{
+.section-col {
   position: relative;
   width: 100%;
   -ms-flex: 0 0 50%;
@@ -49,10 +43,10 @@ p{
   max-width: 50%;
   transition: opacity 250ms linear;
 }
-.section-row .section-col:hover{
+.section-row .section-col:hover {
   opacity: 1;
 }
-.section{
+.section {
   position: relative;
   display: block;
   width: 100%;
@@ -60,7 +54,7 @@ p{
   cursor: pointer;
   padding: 15px;
 }
-.section-in{
+.section-in {
   position: relative;
   display: block;
   width: 100%;
@@ -68,17 +62,17 @@ p{
   border-radius: 6px;
   cursor: pointer;
 }
-.section-in img{
+.section-in img {
   display: block;
   width: 100%;
   height: auto;
   transition: transform 250ms linear;
 }
-.section-col:hover .section-in img{
+.section-col:hover .section-in img {
   transform: scale(1.1) rotate(-3deg);
 }
 
-.hover-text{
+.hover-text {
   position: fixed;
   top: 0;
   left: 0;
@@ -100,11 +94,11 @@ p{
   justify-content: center;
   -ms-flex-pack: center;
   text-align: center;
-    -ms-flex-item-align: center;
-    align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
   mix-blend-mode: difference;
 }
-.hover-text h2{
+.hover-text h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-size: 8vw;
@@ -114,35 +108,33 @@ p{
   transform: scale(0.8);
   transition: transform 250ms linear, opacity 250ms ease;
 }
-.section-col:hover + .hover-text h2{
+.section-col:hover + .hover-text h2 {
   opacity: 1;
   transform: scale(1);
 }
 
-
 .logo {
-	position: fixed;
-	top: 25px;
-	left: 25px;
-	display: block;
-	z-index: 1000;
-	transition: all 250ms linear;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  display: block;
+  z-index: 1000;
+  transition: all 250ms linear;
 }
 .logo img {
-	height: 26px;
-	width: auto;
-	display: block;
-	transition: filter 250ms 700ms linear;
+  height: 26px;
+  width: auto;
+  display: block;
+  transition: filter 250ms 700ms linear;
 }
 
-
 @media (max-width: 767px) {
-  .section-col{
+  .section-col {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
   }
-  .hover-text h2{
+  .hover-text h2 {
     font-size: 12vw;
   }
 }

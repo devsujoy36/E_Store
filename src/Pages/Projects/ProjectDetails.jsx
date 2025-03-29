@@ -1,11 +1,10 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { AuthContext } from "../../Firebase/AuthProvider";
 import { useParams } from "react-router-dom";
 
 
 const ProjectDetails = () => {
   const { projectList } = useContext(AuthContext);
-const [project, setProject] = useState();
 const projectPathId = useParams();
 const projectId = projectPathId.id;
 const projectFinal = projectList.filter(project => projectId === project.id);

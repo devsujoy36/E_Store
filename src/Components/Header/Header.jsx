@@ -71,15 +71,12 @@ const Header = () => {
               <NavLink to={'/'} className='px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700'> Home </NavLink>
 
               <NavLink to={'/about'} className='px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700'> About </NavLink>
-              {/* <NavLink to={'/courses'} className='px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700'> Courses </NavLink> */}
-
-              {/* <NavLink to={'/products'} className='px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700'> Products </NavLink> */}
+             
 
               <NavLink to={'/projects'} className='px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700'> Projects </NavLink>
 
               {!user && <NavLink to={'/login'} className='px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700'> Log In </NavLink>}
 
-              {/* <NavLink to={'/signup'} className='px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700'> Sign Up </NavLink> */}
             </div>
 
             <div className='flex items-center mt-4 lg:mt-0'>
@@ -111,9 +108,9 @@ const Header = () => {
                 </button>
 
                 {showProfile && user &&
-                  <ul className="absolute mt-2  z-10 flex min-w-[180px] flex-col gap-2 overflow-auto rounded-md border border-blue-gray-50 bg-white p-3 font-poppins shadow-lg " >
+                  <ul className="absolute mt-2  z-10 flex min-w-[180px] text-black flex-col gap-2 overflow-auto rounded-md border border-blue-gray-50 bg-white p-3 font-poppins shadow-lg " >
 
-                    <button onClick={() => { navigateProfle() }} className="py-2 cursor-pointer active:scale-95  rounded-md lg:mt-0  hover:bg-gray-100 dark:hover:bg-gray-700 text-xl flex justify-center items-center gap-2 transition-all" >
+                    <button onClick={() => { navigateProfle() }} className="py-2 cursor-pointer active:scale-95  rounded-md lg:mt-0  hover:bg-gray-200 dark:hover:bg-gray-700 text-xl flex justify-center items-center gap-2 transition-all" >
                       <CgProfile />
                       <p className="block text-black text-[15px]"> My Profile </p>
 
@@ -121,7 +118,7 @@ const Header = () => {
 
                     <hr className="my-2 border-blue-gray-50" tabIndex="-1" role="menuitem" />
 
-                    <button onClick={() => { signOutHander() }} className="py-2 cursor-pointer active:scale-95  rounded-md lg:mt-0  hover:bg-gray-100 dark:hover:bg-gray-700 text-xl flex justify-center items-center gap-2 transition-all" >
+                    <button onClick={() => { signOutHander() }} className="py-2 cursor-pointer active:scale-95  rounded-md lg:mt-0  hover:bg-gray-200 dark:hover:bg-gray-700 text-xl flex justify-center items-center gap-2 transition-all" >
                       <FaSignOutAlt />
                       <p className="text-black block text-[15px]"> Sign Out </p>
                     </button>

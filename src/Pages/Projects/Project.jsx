@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 const Project = ({ project }) => {
     // console.log(project);
     const { id, img, title, description, rating, sourceURL, liveURL, features } = project
-    
+
     return (
         <div>
             <div className="flex justify-center items-center ">
@@ -61,21 +61,14 @@ const Project = ({ project }) => {
                                 </p>
                             </div>
                             <p className="block font-sans text-base antialiased font-light leading-relaxed text-gray-700">
-                                {description}
+                                {description.slice(0, 60)} <Link to={`/projects/${id}`} className="font-semibold text-blue-600">Read More...</Link>
                             </p>
                         </div>
 
                         <div className="p-6 pt-3 flex justify-between md:text-md text-xs items-center gap-10">
-                            <a href={sourceURL} target="_blank"
-                                className="bg-black hover:bg-transparent hover:text-black  text-white text-center font-semibold w-full py-3.5 px-7 rounded-xl cursor-pointer hover:shadow-xl active:shadow-none active:scale-95 transition-all "
-                                type="button">
-                                Source Code
-                            </a>
-                            <a href={liveURL} target="_blank"
-                                className="bg-black hover:bg-transparent hover:text-black text-white text-center font-semibold w-full py-3.5 px-7 rounded-xl cursor-pointer hover:shadow-xl active:shadow-none active:scale-95 transition-all "
-                                type="button">
-                                Live Demo
-                            </a>
+                            <Link to={`/projects/${id}`} className="bg-black hover:bg-transparent hover:text-black  text-white text-center font-semibold w-full py-3.5 px-7 rounded-xl cursor-pointer hover:shadow-xl active:shadow-none active:scale-95 transition-all "
+                                type="button">View Details
+                            </Link>
                         </div>
                     </div>
                 </div>

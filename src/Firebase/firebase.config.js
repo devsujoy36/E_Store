@@ -5,14 +5,16 @@ import { getAuth } from 'firebase/auth'
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
+console.log("Inside Firebase Config",import.meta.env.VITE_APIKE);
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyAn7JBuUe1IewXhNghLR3jUFijFmqYpjII',
-  authDomain: 'estorehub-fe867.firebaseapp.com',
-  projectId: 'estorehub-fe867',
-  storageBucket: 'estorehub-fe867.firebasestorage.app',
-  messagingSenderId: '632385157257',
-  appId: '1:632385157257:web:4c629858a1210d99c12e58'
+  apiKey:import.meta.env.VITE_APIKEY,
+  authDomain:import.meta.env.VITE_AUTHDOMAIN,
+  projectId:import.meta.env.VITE_PROJECTID,
+  storageBucket:import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId:import.meta.env.VITE_MESSAGINGSENDERID,
+  appId:import.meta.env.VITE_APPID,
 }
 
 // Initialize Firebase

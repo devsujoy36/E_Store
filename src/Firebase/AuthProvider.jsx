@@ -15,7 +15,7 @@ const AuthProvider = ({ children }) => {
     const [user, setUser] = useState()
 
     useEffect(() => {
-        fetch("/Projects.json")
+        fetch("/LongDes.json")
             .then(res => res.json())
             .then(data => setProjects(data))
     }, [])

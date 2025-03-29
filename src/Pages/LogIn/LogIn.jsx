@@ -9,7 +9,7 @@ import { ToastContainer, toast } from 'react-toastify';
 const LogIn = () => {
     const notify = (msg) => toast(msg);
     const [showhide, setShowHide] = useState(1)
-    const { logInUser, setUser, user, signInWithGoogle } = useContext(AuthContext)
+    const { logInUser, setUser, signInWithGoogle } = useContext(AuthContext)
     const navigate = useNavigate()
     const location = useLocation()
     console.log("location in the login page", location);
@@ -30,13 +30,14 @@ const LogIn = () => {
                 console.log(error.message);
                 notify(error.message);
             });
-    }
-
-    const googleSignInHandler = () => {
-        signInWithGoogle()
+        }
+        
+        const googleSignInHandler = () => {
+            signInWithGoogle()
             .then((result) => {
                 setUser(result.user)
                 console.log(result.user);
+                navigate(location?.state ? location.state : "/")
             })
             .catch((error) => {
                 console.log(error.message);

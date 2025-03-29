@@ -17,6 +17,7 @@ const Projects = () => {
 
     return (
         <div className="max-w-7xl md:my-20 my-10 md:mx-auto mx-5">
+            <h1 className="md:text-5xl text-2xl text-center font-semibold pb-5">Projects </h1>
             <div className="grid md:grid-cols-3 grid-cols-1 gap-2">
                 {projectList.map((project, index) => (
                     <Project key={index} project={project} />

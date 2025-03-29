@@ -14,6 +14,7 @@ import Courses from './Pages/Courses/Courses.jsx';
 import Products from './Pages/Products/Products.jsx';
 import AuthProvider from './Firebase/AuthProvider.jsx';
 import Profile from './Pages/Profile/Profile.jsx';
+import ProjectDetails from './Pages/Projects/ProjectDetails.jsx';
 const router = createBrowserRouter([
     {
         path: "/",
@@ -25,7 +26,14 @@ const router = createBrowserRouter([
             { path: "/contactus", element: <ContactUs /> },
             { path: "/products", element: <Products /> },
             { path: "/courses", element: <Courses /> },
-            { path: "/projects", element: <Projects /> }, 
+            {
+                path: "/projects",
+                element: <Projects />,
+            },
+            {
+                path: "/projects/:id",
+                element: <ProjectDetails />,
+            },
             { path: "/login", element: <LogIn /> },
             { path: "/signup", element: <SignUp /> },
             { path: "/profile", element: <Profile /> },

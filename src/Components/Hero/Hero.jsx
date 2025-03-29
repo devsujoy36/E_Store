@@ -2,8 +2,8 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div className='portfolio-bg-hero md:py-0 pt-24'>
-      <div className='grid  grid-cols-1 md:grid-cols-3 gap-2 container mx-auto md:min-h-[85vh] overflow-hidden'>
+    <div className='portfolio-bg-hero bg-cover bg-no-repeat md:py-0 pt-24'>
+      <div className='grid  grid-cols-1 md:grid-cols-3 gap-2 container mx-auto md:min-h-[800px] overflow-hidden'>
 
         <div className=' z-10 col-span-1 text-4xl  flex justify-center items-center md:text-left text-center flex-col'>
           <h1 className="md:text-4xl ">Hello! I am <br />

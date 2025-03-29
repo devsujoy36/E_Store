@@ -111,19 +111,19 @@ const Header = () => {
                 </button>
 
                 {showProfile && user &&
-                  <ul className="absolute mt-2 z-10 flex min-w-[180px] flex-col gap-2 overflow-auto rounded-md border border-blue-gray-50 bg-white p-3 font-poppins shadow-lg " >
+                  <ul className="absolute mt-2  z-10 flex min-w-[180px] flex-col gap-2 overflow-auto rounded-md border border-blue-gray-50 bg-white p-3 font-poppins shadow-lg " >
 
-                    <button onClick={() => { navigateProfle() }} className="py-2 cursor-pointer active:scale-95 text-gray-700 rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 text-xl flex justify-center items-center gap-2 transition-all" >
+                    <button onClick={() => { navigateProfle() }} className="py-2 cursor-pointer active:scale-95  rounded-md lg:mt-0  hover:bg-gray-100 dark:hover:bg-gray-700 text-xl flex justify-center items-center gap-2 transition-all" >
                       <CgProfile />
-                      <p className="block text-[15px]"> My Profile </p>
+                      <p className="block text-black text-[15px]"> My Profile </p>
 
                     </button>
 
                     <hr className="my-2 border-blue-gray-50" tabIndex="-1" role="menuitem" />
 
-                    <button onClick={() => { signOutHander() }} className="py-2 cursor-pointer active:scale-95 text-gray-700 rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 text-xl flex justify-center items-center gap-2 transition-all" >
+                    <button onClick={() => { signOutHander() }} className="py-2 cursor-pointer active:scale-95  rounded-md lg:mt-0  hover:bg-gray-100 dark:hover:bg-gray-700 text-xl flex justify-center items-center gap-2 transition-all" >
                       <FaSignOutAlt />
-                      <p className="block text-[15px]"> Sign Out </p>
+                      <p className="text-black block text-[15px]"> Sign Out </p>
                     </button>
 
                   </ul>

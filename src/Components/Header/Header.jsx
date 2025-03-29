@@ -31,9 +31,6 @@ const Header = () => {
     setIsOpen(!isOpen)
   }
 
-  // if (user) {
-  //   console.log("User Nav", user);
-  // }
 
 
 

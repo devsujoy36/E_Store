@@ -1,33 +1,17 @@
-// import { useContext, useState } from "react";
-// import { AuthContext } from "../../Firebase/AuthProvider";
-// import { useParams } from "react-router-dom";
+import { useContext, useEffect, useState } from "react";
+import { AuthContext } from "../../Firebase/AuthProvider";
+import { useParams } from "react-router-dom";
 
 
 const ProjectDetails = () => {
-  // const { projectList } = useContext(AuthContext);
-  // const [project, setProject] = useState(null)
-  // const projectPathId = useParams()
-  // const projectId = projectPathId.id;
-  // const projectFinal = projectList.filter(project => projectId === project.id)
-  // console.log("final project", project);
+  const { projectList } = useContext(AuthContext);
+const [project, setProject] = useState();
+const projectPathId = useParams();
+const projectId = projectPathId.id;
+const projectFinal = projectList.filter(project => projectId === project.id);
+console.log(projectFinal[0]);
 
-  const project1 = {
-    id: "nest-mart-bd",
-    img: "https://i.ibb.co.com/jPjh8HxH/nestmartbd-netlify-app.png",
-    title: "Nest-Mart-BD",
-    description: "An e-commerce platform offering a wide range of essential products with easy accessibility.",
-    rating: 4.6,
-    sourceURL: "https://github.com/devsujoy36/Nest-Mart-BD.git",
-    liveURL: "https://nestmartbd.netlify.app",
-    features: [
-      "Diverse product categories",
-      "User-friendly navigation",
-      "Discount offers and deals",
-      "Secure payment integration",
-      "Fast and reliable delivery"
-    ]
-  }
-  const { img, title, description, rating, sourceURL, liveURL, features } = project1;
+  const { img, title, description, rating, sourceURL, liveURL, features } = projectFinal[0];
 
 
 
@@ -35,7 +19,7 @@ const ProjectDetails = () => {
     <div className="max-w-7xl md:my-12 my-10 md:mx-auto mx-5">
       <h1 className="md:text-5xl text-2xl text-center font-semibold pb-20">Project Details</h1>
 
-      <div className="flex justify-center md:flex-row flex-col-reverse gap-5">
+      <div className="flex md:my-0 -my-20 justify-center md:flex-row flex-col-reverse gap-5">
 
         {/* img container  */}
         <div className=" md:w-1/2 hover:shadow-2xl transition-all duration-500 overflow-hidden hover:cursor-pointer">
@@ -44,7 +28,7 @@ const ProjectDetails = () => {
 
         {/* details container */}
         <div  className=" relative p-5 md:w-1/2">
-          <div className="sticky top-0 space-y-8 ">
+          <div className="sticky top-0 md:space-y-8 space-y-5">
 
             <div className="flex items-center justify-between mb-3">
               <h5 className="block font-sans md:text-5xl text-2xl antialiased font-medium leading-snug tracking-normal text-blue-600">{title}</h5>
@@ -59,7 +43,7 @@ const ProjectDetails = () => {
               </p>
             </div>
 
-            <h1 className="text-xl ">{description}</h1>
+            <h1 className="md:text-xl ">{description}</h1>
 
             <div className="md:text-lg text-sm">
               <h1 className="text-blue-600">Features</h1>

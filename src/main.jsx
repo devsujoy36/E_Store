@@ -15,6 +15,7 @@ import Products from './Pages/Products/Products.jsx';
 import AuthProvider from './Firebase/AuthProvider.jsx';
 import Profile from './Pages/Profile/Profile.jsx';
 import ProjectDetails from './Pages/Projects/ProjectDetails.jsx';
+import PrivateRoutes from './Root_Page/PrivateRoutes.jsx';
 const router = createBrowserRouter([
     {
         path: "/",
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/projects/:id",
-                element: <ProjectDetails />,
+                element: <PrivateRoutes><ProjectDetails /></PrivateRoutes>,
             },
             { path: "/login", element: <LogIn /> },
             { path: "/signup", element: <SignUp /> },

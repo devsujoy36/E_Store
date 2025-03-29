@@ -9,7 +9,7 @@ import { ToastContainer, toast } from 'react-toastify';
 const LogIn = () => {
     const notify = (msg) => toast(msg);
     const [showhide, setShowHide] = useState(1)
-    const { logInUser, setUser,user, signInWithGoogle } = useContext(AuthContext)
+    const { logInUser, setUser, user, signInWithGoogle } = useContext(AuthContext)
     const navigate = useNavigate()
 
     const formHandler = (e) => {
@@ -29,6 +29,17 @@ const LogIn = () => {
             .catch((error) => {
                 console.log(error.message);
                 notify(error.message);
+            });
+    }
+
+    const googleSignInHandler = () => {
+        signInWithGoogle()
+            .then((result) => {
+                setUser(result.user)
+                console.log(result.user);
+            })
+            .catch((error) => {
+                console.log(error.message);
             });
     }
 
@@ -97,7 +108,7 @@ const LogIn = () => {
                                 </div>
                             </div>
                             <div>
-                                <button onClick={() => { signInWithGoogle() }} className="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-blue-600 transition  ease-in-out transform border-2 border-white shadow-md rounded-xl  active:scale-95 cursor-pointer">
+                                <button onClick={() => { googleSignInHandler() }} className="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-blue-600 transition  ease-in-out transform border-2 border-white shadow-md rounded-xl  active:scale-95 cursor-pointer">
                                     <div className="flex items-center justify-center">
                                         <img className="w-5 h-5 mr-2"
                                             src="https://lh3.googleusercontent.com/COxitqgJr1sJnIDe8-jiKhxDx1FrYbtRHKJ9z_hELisAlapwE9LUPh6fcXIfb5vwpbMl4xl9H9TRFPc5NOO8Sb3VSgIBrfRYvW6cUA"

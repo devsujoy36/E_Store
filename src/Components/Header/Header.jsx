@@ -20,6 +20,12 @@ const Header = () => {
 
   const signOutHander = () => {
     signOutUser()
+      .then(() => {
+        console.log("Sign Out Successfull");
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
     navigate("/login")
     setShowProfile(!showProfile)
     setIsOpen(!isOpen)
@@ -96,8 +102,8 @@ const Header = () => {
                     ?
                     <img alt="Profile Img" src={user?.photoURL} className=" h-12 w-12  rounded-full active:scale-95 transition-all " />
 
-                     :
-                    <div className='overflow-hidden active:scale-95 rounded-full'> 
+                    :
+                    <div className='overflow-hidden active:scale-95 rounded-full'>
                       <img alt="Profile Img" src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg" className=" h-12 w-12   scale-150 transition-all " />
                     </div>
                   }

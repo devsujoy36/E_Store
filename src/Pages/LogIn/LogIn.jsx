@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom"
+import { Link, useLocation, useNavigate } from "react-router-dom"
 import { FaRegEye } from "react-icons/fa";
 import { FaRegEyeSlash } from "react-icons/fa";
 import { useContext, useState } from "react";
@@ -11,6 +11,8 @@ const LogIn = () => {
     const [showhide, setShowHide] = useState(1)
     const { logInUser, setUser, user, signInWithGoogle } = useContext(AuthContext)
     const navigate = useNavigate()
+    const location = useLocation()
+    console.log("location in the login page", location);
 
     const formHandler = (e) => {
         e.preventDefault()
@@ -22,9 +24,7 @@ const LogIn = () => {
                 setUser(result.user)
                 notify("Account Create Successfully")
                 console.log(result.user);
-                if (result.user) {
-                    navigate("/profile")
-                }
+                navigate(location?.state ? location.state : "/")
             })
             .catch((error) => {
                 console.log(error.message);
@@ -41,10 +41,6 @@ const LogIn = () => {
             .catch((error) => {
                 console.log(error.message);
             });
-    }
-
-    if (user) {
-        navigate("/profile")
     }
 
 

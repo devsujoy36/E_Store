@@ -1,32 +1,37 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../Firebase/AuthProvider";
 import { useParams } from "react-router-dom";
 
 
 const ProjectDetails = () => {
   const { projectList } = useContext(AuthContext);
-const projectPathId = useParams();
-const projectId = projectPathId.id;
-const projectFinal = projectList.filter(project => projectId === project.id);
-console.log(projectFinal[0]);
-
+  const projectPathId = useParams();
+  const projectId = projectPathId.id;
+  const projectFinal = projectList.filter(project => projectId === project.id);
+  console.log(projectFinal[0]);
   const { img, title, description, rating, sourceURL, liveURL, features } = projectFinal[0];
 
+  const [showFullImg, setShowFullImg] = useState(1)
 
 
   return (
     <div className="max-w-7xl md:my-12 my-10 md:mx-auto mx-5">
       <h1 className="md:text-5xl text-2xl text-center font-semibold pb-20">Project Details</h1>
 
-      <div className="flex md:my-0 -my-20 justify-center md:flex-row flex-col-reverse gap-5">
+      <div className="flex md:my-0 -my-20 justify-center md:flex-row flex-col gap-5">
 
         {/* img container  */}
-        <div className=" md:w-1/2 hover:shadow-2xl transition-all duration-500 overflow-hidden hover:cursor-pointer">
+        <div className=" md:w-1/2 md:block hidden md:my-0 my-10 hover:shadow-2xl transition-all duration-500 overflow-hidden hover:cursor-pointer">
+          <img className="hover:scale-125 duration-700 transition-all" src={img} alt="" />
+        </div>
+
+
+        <div onClick={() => setShowFullImg(!showFullImg)} className={showFullImg ? "md:w-1/2 md:hidden max-h-56 overflow-hidden md:my-0 my-10 hover:shadow-2xl transition-all duration-500 hover:cursor-pointer" : "md:w-1/2 min-h-56 overflow-hidden md:my-0 my-10 hover:shadow-2xl transition-all duration-500 hover:cursor-pointer"}>
           <img className="hover:scale-125 duration-700 transition-all" src={img} alt="" />
         </div>
 
         {/* details container */}
-        <div  className=" relative p-5 md:w-1/2">
+        <div className=" relative p-5 md:w-1/2">
           <div className="sticky top-0 md:space-y-8 space-y-5">
 
             <div className="flex items-center justify-between mb-3">

@@ -9,7 +9,7 @@ import { ToastContainer, toast } from 'react-toastify';
 const SignUp = () => {
 
     const [showhide, setShowHide] = useState(1)
-    const { signUpUser, setUser,  signInWithGoogle } = useContext(AuthContext)
+    const { signUpUser, setUser, signInWithGoogle } = useContext(AuthContext)
     const notify = (msg) => toast(msg);
     const navigate = useNavigate()
 
@@ -19,29 +19,29 @@ const SignUp = () => {
         const email = form.get("email")
         const password = form.get("password")
         signUpUser(email, password)
-        .then((result) => {
-            setUser(result.user)
-            notify("Account Create Successfully")
-            console.log(result.user);
-            navigate(location?.state ? location.state : "/")
-        })
-        .catch((error) => {
-            console.log(error.message);
-            notify(error.message);
-        });
+            .then((result) => {
+                setUser(result.user)
+                notify("Account Create Successfully")
+                console.log(result.user);
+                navigate(location?.state ? location.state : "/")
+            })
+            .catch((error) => {
+                console.log(error.message);
+                notify(error.message);
+            });
     }
-    
+
     const googleSignInHandler = () => {
         signInWithGoogle()
-        .then((result) => {
-            setUser(result.user)
-            console.log(result.user);
-            navigate(location?.state ? location.state : "/")
-        })
-        .catch((error) => {
-            console.log(error.message);
-        });
-}
+            .then((result) => {
+                setUser(result.user)
+                console.log(result.user);
+                navigate(location?.state ? location.state : "/")
+            })
+            .catch((error) => {
+                console.log(error.message);
+            });
+    }
 
     return (
         <section className="w-full">

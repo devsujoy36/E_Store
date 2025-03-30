@@ -8,10 +8,10 @@ const Footer = () => {
                 <div className="container md:mx-auto px-5">
                     <footer>
                         <a href='/'><h1 className=' text-2xl text-blue-600 italic font-bold font-carter-one'>ESTORE_HUB</h1></a>
-                        <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-4">
+                        <div className="md:mt-14 mt-5 grid md:gap-8 gap-5 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-4">
                             <div>
-                                <h3 className="mb-4 font-bold">Company</h3>
-                                <ul className="space-y-4 text-zinc-600">
+                                <h3 className="md:mb-4 mb-2 font-bold">Company</h3>
+                                <ul className=" md:space-y-4 space-y-1 text-zinc-600">
                                     <li className="font-medium hover:text-gray-800"><Link to={"/"}>Home</Link> </li>
                                     <li className="font-medium hover:text-gray-800"><Link to={"/profile"}>Profile</Link>   </li>
                                     <li className="font-medium hover:text-gray-800"><Link to={"/projects"}>Projects</Link> </li>
@@ -22,8 +22,8 @@ const Footer = () => {
                             </div>
 
                             <div>
-                                <h3 className="mb-4 font-bold">Product</h3>
-                                <ul className="space-y-4 text-zinc-600">
+                                <h3 className="md:mb-4 mb-2 font-bold">Product</h3>
+                                <ul className=" md:space-y-4 space-y-1 text-zinc-600">
                                     <li className="font-medium hover:text-gray-800"><Link to={"/"}>Overview</Link> </li>
                                     <li className="font-medium hover:text-gray-800"><Link to={"/"}>Pricing</Link>  </li>
                                     <li className="font-medium hover:text-gray-800"><Link to={"/"}>Marketplace</Link>  </li>
@@ -34,8 +34,8 @@ const Footer = () => {
                             </div>
 
                             <div>
-                                <h3 className="mb-4 font-bold">Resources</h3>
-                                <ul className="space-y-4 text-zinc-600">
+                                <h3 className="md:mb-4 mb-2 font-bold">Resources</h3>
+                                <ul className=" md:space-y-4 space-y-1 text-zinc-600">
                                     <li className="font-medium hover:text-gray-800"><Link to={"/"}>Help</Link> </li>
                                     <li className="font-medium hover:text-gray-800"><Link to={"/"}>Sales</Link></li>
                                     <li className="font-medium hover:text-gray-800"><Link to={"/"}>Advertise</Link></li>

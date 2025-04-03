@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 
 const Project = ({ project }) => {
-    // console.log(project);
+    console.log(project);
     const { id, img, title, description, rating, sourceURL, liveURL, features } = project
 
     return (
@@ -18,7 +18,7 @@ const Project = ({ project }) => {
                         <div className="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40 cursor-pointer">
                             <Link to={`/projects/${id}`}>
 
-                                <div className="max-h-60 overflow-hidden ">
+                                <div className="h-60 overflow-hidden ">
                                     <img src={img} alt="ui/ux review check" className="" />
                                 </div>
 

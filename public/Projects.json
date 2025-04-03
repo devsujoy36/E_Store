@@ -1,5 +1,22 @@
 [
   {
+    "id": "residential-36",
+    "img": "https://i.ibb.co.com/Zps3010X/residential36-netlify-app.png",
+    "title": "Residential Real Estate",
+    "description": "A modern real estate platform for finding and listing residential properties, including apartments, townhouses, and vacation rentals.",
+    "rating": 4.9,
+    "sourceURL": "https://github.com/devsujoy36/Residential_Real_Estate",
+    "liveURL": "https://residential36.netlify.app",
+    "features": [
+      "Comprehensive residential property listings",
+      "Advanced search and filtering options",
+      "Secure inquiry and booking system",
+      "High-quality property images and details",
+      "User reviews and ratings",
+      "Responsive and mobile-friendly design"
+    ]
+  },
+  {
     "id": "tour-to-tuscany",
     "img": "https://i.ibb.co.com/mCj0sTHm/tourtotuscany36-netlify-app.png",
     "title": "Tour-To-Tuscany",

@@ -6,6 +6,7 @@ import { AuthContext } from "../../Firebase/AuthProvider";
 
 const Projects = () => {
     const { projectList } = useContext(AuthContext);
+console.log(projectList);
 
     if (!projectList || projectList.length === 0) {
         return (
